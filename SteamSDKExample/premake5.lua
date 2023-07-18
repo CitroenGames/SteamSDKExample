@@ -32,11 +32,6 @@ project "SteamSDKExample"
    filter "system:windows"
       systemversion "latest"
       defines { "WL_PLATFORM_WINDOWS" }
-      postbuildcommands 
-      {
-         "{COPY} %{cfg.buildtarget.directory}../steam/steam_api.dll %{cfg.buildtarget.directory}",
-         "{COPY} %{cfg.buildtarget.directory}../steam/steam_api64.dll %{cfg.buildtarget.directory}"
-      }
 
    filter "configurations:Debug"
       defines { "WL_DEBUG" }
