@@ -93,7 +93,6 @@ public:
     }
 };
 
-
 class ExampleLayer : public Walnut::Layer
 {
 public:
